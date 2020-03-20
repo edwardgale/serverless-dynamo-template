@@ -38,7 +38,7 @@ functions:
           - dynamodb:Query
         Resource: "arn:aws:dynamodb:${self:provider.region}:#{AWS::AccountId}:table/${self:service}-${self:provider.stage}"
     events:
-      - http:
+      - httpApi:
           method: POST
           path: /orderId
     package:

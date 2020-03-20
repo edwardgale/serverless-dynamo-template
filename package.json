@@ -7,7 +7,7 @@
     "lint": "eslint --ignore-pattern='node_modules/' --ignore-pattern='coverage/' .",
     "test": "jest --verbose --coverage",
     "slsd": "sls deploy -s {STAGE}",
-    "slsi": "sls invoke local -f openApiTest -s {STAGE} -p test-data/event.json"
+    "slsi": "sls invoke local -f openApiTest -s {STAGE} -p test-data/eventApi.json"
   },
   "repository": {
     "type": "git",
